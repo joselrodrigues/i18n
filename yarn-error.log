@@ -1,0 +1,70 @@
+Arguments: 
+  /Users/joserodrigues/.nvm/versions/node/v20.17.0/bin/node /opt/homebrew/bin/yarn install
+
+PATH: 
+  /Users/joserodrigues/.rbenv/shims:/Users/joserodrigues/.rvm/gems/ruby-2.7.5/bin:/Users/joserodrigues/.rvm/gems/ruby-2.7.5@global/bin:/Users/joserodrigues/.rvm/rubies/ruby-2.7.5/bin:/bin:/Users/joserodrigues/miniconda3/bin:/Users/joserodrigues/miniconda3/condabin:/Users/joserodrigues/.nvm/versions/node/v20.17.0/bin:/Users/joserodrigues/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/usr/local/go/bin:/opt/podman/bin:/Users/joserodrigues/.cargo/bin:/Applications/Ghostty.app/Contents/MacOS:/Users/joserodrigues/go/bin:/Users/joserodrigues/.rvm/bin:/Users/joserodrigues/Library/Android/sdk/emulator:/Users/joserodrigues/Library/Android/sdk/platform-tools:/opt/homebrew/opt/fzf/bin:/Users/joserodrigues/zig/
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  20.17.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: Failed to replace env in config: ${AUTH_NPM_TOKEN}
+      at /opt/homebrew/lib/node_modules/yarn/lib/cli.js:94933:13
+      at String.replace (<anonymous>)
+      at envReplace (/opt/homebrew/lib/node_modules/yarn/lib/cli.js:94928:16)
+      at Function.normalizeConfig (/opt/homebrew/lib/node_modules/yarn/lib/cli.js:31938:69)
+      at NpmRegistry.<anonymous> (/opt/homebrew/lib/node_modules/yarn/lib/cli.js:31968:34)
+      at Generator.next (<anonymous>)
+      at step (/opt/homebrew/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /opt/homebrew/lib/node_modules/yarn/lib/cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "@i18n/translation",
+    "version": "0.1.1",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "source": "src/index.ts",
+    "directories": {
+      "lib": "dist"
+    },
+    "files": [
+      "dist"
+    ],
+    "scripts": {
+      "test": "jest",
+      "build": "rm -rf dist && tsc -p tsconfig.build.json",
+      "prepack": "npm run build"
+    },
+    "author": "",
+    "license": "ISC",
+    "description": "Translation library",
+    "dependencies": {
+      "i18next": "^23.15.1",
+      "i18next-browser-languagedetector": "^8.0.0",
+      "react-i18next": "^15.0.2"
+    },
+    "packageManager": "yarn@1.22.22",
+    "devDependencies": {
+      "@babel/core": "^7.25.2",
+      "@babel/preset-env": "^7.25.4",
+      "@babel/preset-typescript": "^7.24.7",
+      "@types/jest": "^29.5.13",
+      "babel-jest": "^29.7.0",
+      "jest": "^29.7.0",
+      "ts-node": "^10.9.2",
+      "typescript": "^5.6.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
